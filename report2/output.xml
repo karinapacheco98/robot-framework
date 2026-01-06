@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-05T23:06:00.593580" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste2" source="C:\Users\KarinaPacheco\Documents\TRILHA_QA\robot-framework\teste2.robot">
+<test id="s1-t1" name="Cenário 1: Acessando o site do Qazando" line="44">
+<kw name="Abrir Site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-05T23:06:00.771431" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
+<arg>${SITE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-05T23:06:00.771139" elapsed="1.875371"/>
+</kw>
+<status status="PASS" start="2026-01-05T23:06:00.770321" elapsed="1.876903"/>
+</kw>
+<kw name="Wait">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${tempo}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-05T23:06:02.650177" elapsed="0.004092"/>
+</kw>
+<arg>10s</arg>
+<status status="PASS" start="2026-01-05T23:06:02.648543" elapsed="0.006219"/>
+</kw>
+<kw name="Print">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-05T23:06:02.803547" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-05T23:06:02.657359" elapsed="0.146637"/>
+</kw>
+<status status="PASS" start="2026-01-05T23:06:02.656307" elapsed="0.148041"/>
+</kw>
+<kw name="Clicar em login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-05T23:06:02.806678" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-05T23:06:02.806043" elapsed="0.446252"/>
+</kw>
+<status status="PASS" start="2026-01-05T23:06:02.805426" elapsed="0.447070"/>
+</kw>
+<kw name="Wait">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${tempo}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-05T23:06:03.253838" elapsed="0.002718"/>
+</kw>
+<arg>10s</arg>
+<status status="PASS" start="2026-01-05T23:06:03.253283" elapsed="0.003468"/>
+</kw>
+<kw name="Digitar email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-05T23:06:03.259275" level="INFO">Typing text 'karinapacheco@teste.com' into text field 'id:user'.</msg>
+<arg>id:user</arg>
+<arg>karinapacheco@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-05T23:06:03.258554" elapsed="0.575412"/>
+</kw>
+<status status="PASS" start="2026-01-05T23:06:03.257621" elapsed="0.576746"/>
+</kw>
+<kw name="Digitar Senha">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-05T23:06:03.837547" level="INFO">Typing text '123456' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-05T23:06:03.836547" elapsed="0.191725"/>
+</kw>
+<status status="PASS" start="2026-01-05T23:06:03.835295" elapsed="0.193521"/>
+</kw>
+<kw name="Wait">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${tempo}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-05T23:06:04.030321" elapsed="0.002233"/>
+</kw>
+<arg>10s</arg>
+<status status="PASS" start="2026-01-05T23:06:04.029610" elapsed="0.003120"/>
+</kw>
+<kw name="Print">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-05T23:06:04.177357" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-05T23:06:04.033666" elapsed="0.144066"/>
+</kw>
+<status status="PASS" start="2026-01-05T23:06:04.033207" elapsed="0.144858"/>
+</kw>
+<kw name="Clicar em Logar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-05T23:06:04.181008" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-05T23:06:04.180473" elapsed="0.198875"/>
+</kw>
+<status status="PASS" start="2026-01-05T23:06:04.179642" elapsed="0.200075"/>
+</kw>
+<kw name="Print">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-05T23:06:04.548067" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-05T23:06:04.381311" elapsed="0.166993"/>
+</kw>
+<status status="PASS" start="2026-01-05T23:06:04.380513" elapsed="0.167975"/>
+</kw>
+<kw name="Wait">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${tempo}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-05T23:06:04.549948" elapsed="0.002424"/>
+</kw>
+<arg>10s</arg>
+<status status="PASS" start="2026-01-05T23:06:04.549335" elapsed="0.003221"/>
+</kw>
+<tag>Teste1</tag>
+<status status="PASS" start="2026-01-05T23:06:00.769261" elapsed="3.783726"/>
+</test>
+<status status="PASS" start="2026-01-05T23:06:00.595341" elapsed="3.959183"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Teste1</stat>
+</tag>
+<suite>
+<stat name="Teste2" id="s1" pass="1" fail="0" skip="0">Teste2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
